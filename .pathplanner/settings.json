@@ -1,0 +1,37 @@
+{
+  "robotWidth": 0.9,
+  "robotLength": 0.9,
+  "holonomicMode": true,
+  "pathFolders": [
+    "3-2-1 Paths",
+    "Source Paths",
+    "4 Not Source Closer",
+    "4 Note CENTER",
+    "4 Note SOURCE Blue",
+    "4 Note SOURCE Red",
+    "4 Note SOURCE Red OLD",
+    "5 Note AMP Blue",
+    "5 Note AMP Blue vMSC",
+    "5 Note AMP Red",
+    "5 Note AMP Red vMSC",
+    "Amp Paths",
+    "Center Race 2 Blue",
+    "Center Race 2 Red",
+    "Center Race AMP Blue",
+    "Center Race SOURCE Blue",
+    "Close Notes",
+    "Deprecated"
+  ],
+  "autoFolders": [
+    "Amp",
+    "Center",
+    "Deprecated",
+    "Source",
+    "Source WIP"
+  ],
+  "defaultMaxVel": 4.5,
+  "defaultMaxAccel": 3.75,
+  "defaultMaxAngVel": 540.0,
+  "defaultMaxAngAccel": 720.0,
+  "maxModuleSpeed": 5.0
+}

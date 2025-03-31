@@ -1,0 +1,132 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 0.7450681568029801,
+        "y": 6.683920394867817
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.131773632916635,
+        "y": 6.748633317086454
+      },
+      "isLocked": false,
+      "linkedName": "amp start"
+    },
+    {
+      "anchor": {
+        "x": 2.6957005265361875,
+        "y": 6.8
+      },
+      "prevControl": {
+        "x": 1.6957630415021128,
+        "y": 6.788818496356728
+      },
+      "nextControl": {
+        "x": 4.378236504220755,
+        "y": 6.818814458349638
+      },
+      "isLocked": false,
+      "linkedName": "1 pickup"
+    },
+    {
+      "anchor": {
+        "x": 7.974426038942167,
+        "y": 7.349539023402371
+      },
+      "prevControl": {
+        "x": 6.192358474807038,
+        "y": 7.184758138885647
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "4 pickup"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "SOTM",
+      "minWaypointRelativePos": 0,
+      "maxWaypointRelativePos": 1.05,
+      "constraints": {
+        "maxVelocity": 1.0,
+        "maxAcceleration": 4.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "track Speaker",
+      "waypointRelativePos": 0.15,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "trackSpeakerEnable"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "disable passthrough",
+      "waypointRelativePos": 1.4,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "disablePassthrough"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "disable passthrough again",
+      "waypointRelativePos": 1.65,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "disablePassthrough"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.5,
+    "maxAcceleration": 5.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Amp Paths",
+  "previewStartingState": {
+    "rotation": 60.255118703057796,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

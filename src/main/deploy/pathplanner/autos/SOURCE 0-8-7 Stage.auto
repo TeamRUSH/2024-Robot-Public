@@ -1,0 +1,80 @@
+{
+  "version": 1.0,
+  "startingPose": null,
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "autonInit"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "enableLeaveIntakeOut"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "trackSpeakerEnable"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Start-0-8"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "8-x"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "forceFire"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "x-7 stage"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "7-x"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "forceFire"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "x-end"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Source WIP",
+  "choreoAuto": false
+}

@@ -1,0 +1,70 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.00216014846444,
+        "y": 2.422112231611851
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.216360378666703,
+        "y": 0.0832023285668202
+      },
+      "isLocked": false,
+      "linkedName": "7 pickup"
+    },
+    {
+      "anchor": {
+        "x": 3.398297967767107,
+        "y": 2.838123874445947
+      },
+      "prevControl": {
+        "x": 4.470683535961666,
+        "y": 1.5253760237250213
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "source shot"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "enable tracking",
+      "waypointRelativePos": 0.25,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "trackSpeakerEnable"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.5,
+    "maxAcceleration": 4.25,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Source Paths",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

@@ -1,0 +1,70 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.398297967767107,
+        "y": 2.838123874445947
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 4.368991801046665,
+        "y": 2.070813510996392
+      },
+      "isLocked": false,
+      "linkedName": "source shot"
+    },
+    {
+      "anchor": {
+        "x": 7.946691929419894,
+        "y": 0.8690020983645582
+      },
+      "prevControl": {
+        "x": 6.837327548528971,
+        "y": 0.9429597237572857
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "8 pickup"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "retract intake",
+      "waypointRelativePos": 0.3,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "disableLeaveIntakeOut"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.5,
+    "maxAcceleration": 4.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Source Paths",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

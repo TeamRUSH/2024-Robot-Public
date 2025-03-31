@@ -1,0 +1,70 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.36,
+        "y": 1.7287594935550237
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.3415105936518181,
+        "y": 2.912081499838676
+      },
+      "isLocked": false,
+      "linkedName": "Gemmies End"
+    },
+    {
+      "anchor": {
+        "x": 1.8082090218234488,
+        "y": 5.121565558446433
+      },
+      "prevControl": {
+        "x": 1.9468795694348142,
+        "y": 4.418968117215515
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Center Shot"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "aim",
+      "waypointRelativePos": 0.2,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "trackSpeakerEnable"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 2.0,
+    "maxAcceleration": 2.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -0.9710219310791847,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "3-2-1 Paths",
+  "previewStartingState": {
+    "rotation": -88.72696997994326,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

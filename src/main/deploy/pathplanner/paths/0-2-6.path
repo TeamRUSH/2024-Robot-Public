@@ -1,0 +1,98 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.3644632694670795,
+        "y": 5.528332498106438
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 3.278116826503923,
+        "y": 5.676247748891894
+      },
+      "isLocked": false,
+      "linkedName": "Off-center Flat Start"
+    },
+    {
+      "anchor": {
+        "x": 3.989958970908932,
+        "y": 5.01062912035734
+      },
+      "prevControl": {
+        "x": 3.6660700110325437,
+        "y": 5.295651405048561
+      },
+      "nextControl": {
+        "x": 4.452194129613482,
+        "y": 4.603862180697335
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 7.90971311672353,
+        "y": 3.8
+      },
+      "prevControl": {
+        "x": 5.182525680366677,
+        "y": 3.7907552968259095
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "6 End"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "SOTM",
+      "minWaypointRelativePos": 0,
+      "maxWaypointRelativePos": 0.45,
+      "constraints": {
+        "maxVelocity": 0.6,
+        "maxAcceleration": 6.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "disablePassthrough",
+      "waypointRelativePos": 1.55,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "disablePassthrough"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.5,
+    "maxAcceleration": 6.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "3-2-1 Paths",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

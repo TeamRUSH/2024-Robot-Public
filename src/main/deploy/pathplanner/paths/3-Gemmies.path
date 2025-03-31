@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.55,
+        "y": 4.3
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.8566472619431722,
+        "y": 2.904049820712254
+      },
+      "isLocked": false,
+      "linkedName": "3 pickup"
+    },
+    {
+      "anchor": {
+        "x": 1.36,
+        "y": 1.7287594935550237
+      },
+      "prevControl": {
+        "x": 1.5264046571336387,
+        "y": 2.4498463411341223
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Gemmies End"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.6,
+      "rotationDegrees": -100.0,
+      "rotateFast": false
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "disablePassthrough",
+      "waypointRelativePos": 0.45,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "disablePassthrough"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -102.26477372789243,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "3-2-1 Paths",
+  "previewStartingState": {
+    "rotation": -1.1193357038842873,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

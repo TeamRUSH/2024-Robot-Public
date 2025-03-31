@@ -1,0 +1,52 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.3644632694670795,
+        "y": 5.019873823531431
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.159507742438907,
+        "y": 4.622351587045516
+      },
+      "isLocked": false,
+      "linkedName": "Flat Corner Start"
+    },
+    {
+      "anchor": {
+        "x": 2.55,
+        "y": 4.3
+      },
+      "prevControl": {
+        "x": 2.023051919076811,
+        "y": 4.6143199079190955
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "3 pickup"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 1.0,
+    "maxAcceleration": 1.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "3-2-1 Paths",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

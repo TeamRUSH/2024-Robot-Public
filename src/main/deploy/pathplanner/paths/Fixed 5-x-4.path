@@ -1,0 +1,86 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.0,
+        "y": 5.4
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 6.66876274293089,
+        "y": 6.151111080600541
+      },
+      "isLocked": false,
+      "linkedName": "5 pickup"
+    },
+    {
+      "anchor": {
+        "x": 3.7033731725121104,
+        "y": 6.554494550430542
+      },
+      "prevControl": {
+        "x": 3.5154450932059795,
+        "y": 6.441737702846864
+      },
+      "nextControl": {
+        "x": 3.795820204253021,
+        "y": 6.609962769475088
+      },
+      "isLocked": false,
+      "linkedName": "amp shot"
+    },
+    {
+      "anchor": {
+        "x": 7.974426038942167,
+        "y": 7.349539023402371
+      },
+      "prevControl": {
+        "x": 6.578475859654421,
+        "y": 7.109176740876003
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "4 pickup"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "fire",
+      "waypointRelativePos": 1.05,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "forceFire"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 5.0,
+    "maxAcceleration": 4.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Amp Paths",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

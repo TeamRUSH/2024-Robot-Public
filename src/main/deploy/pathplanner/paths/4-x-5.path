@@ -1,0 +1,103 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 7.974426038942167,
+        "y": 7.349539023402371
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 6.153219513646234,
+        "y": 6.822590942479182
+      },
+      "isLocked": false,
+      "linkedName": "4 pickup"
+    },
+    {
+      "anchor": {
+        "x": 3.7033731725121104,
+        "y": 6.554494550430542
+      },
+      "prevControl": {
+        "x": 3.623997381288781,
+        "y": 7.078374772504515
+      },
+      "nextControl": {
+        "x": 3.7495966883825655,
+        "y": 6.2494193456855385
+      },
+      "isLocked": false,
+      "linkedName": "amp shot"
+    },
+    {
+      "anchor": {
+        "x": 8.0,
+        "y": 5.4
+      },
+      "prevControl": {
+        "x": 6.446889866752707,
+        "y": 6.502047518689633
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "5 pickup"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "enable passthrough",
+      "waypointRelativePos": 0.75,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "enablePassthrough"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "disable passthrough",
+      "waypointRelativePos": 1.65,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "disablePassthrough"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 5.0,
+    "maxAcceleration": 4.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Amp Paths",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

@@ -1,0 +1,182 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.398297967767107,
+        "y": 2.838123874445947
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 3.2226486074593774,
+        "y": 3.457518987110046
+      },
+      "isLocked": false,
+      "linkedName": "source shot"
+    },
+    {
+      "anchor": {
+        "x": 1.3737079726411703,
+        "y": 2.616250998267763
+      },
+      "prevControl": {
+        "x": 1.0963668774184392,
+        "y": 2.597761591919581
+      },
+      "nextControl": {
+        "x": 1.6309961376147983,
+        "y": 2.6334035425993383
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 4.073161299475752,
+        "y": 2.727187436356856
+      },
+      "prevControl": {
+        "x": 2.963796918584828,
+        "y": 3.6516577537659587
+      },
+      "nextControl": {
+        "x": 5.182525680366675,
+        "y": 1.8027171189477529
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 7.946691929419894,
+        "y": 0.8690020983645582
+      },
+      "prevControl": {
+        "x": 7.040711018358973,
+        "y": 0.8782468015386488
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "8 pickup"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.4,
+      "rotationDegrees": -109.0,
+      "rotateFast": true
+    }
+  ],
+  "constraintZones": [
+    {
+      "name": "fire",
+      "minWaypointRelativePos": 1.35,
+      "maxWaypointRelativePos": 1.6500000000000001,
+      "constraints": {
+        "maxVelocity": 0.75,
+        "maxAcceleration": 3.0,
+        "maxAngularVelocity": 720.0,
+        "maxAngularAcceleration": 720.0
+      }
+    },
+    {
+      "name": "race",
+      "minWaypointRelativePos": 2.05,
+      "maxWaypointRelativePos": 3.0,
+      "constraints": {
+        "maxVelocity": 4.5,
+        "maxAcceleration": 5.25,
+        "maxAngularVelocity": 720.0,
+        "maxAngularAcceleration": 720.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "enable tracking",
+      "waypointRelativePos": 0.8999999999999999,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "trackSpeakerEnable"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "fire",
+      "waypointRelativePos": 1.5,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "forceFire"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "disable tracking",
+      "waypointRelativePos": 0.1,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "trackSpeakerDisable"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "retract intake",
+      "waypointRelativePos": 2.25,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "disableLeaveIntakeOut"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 2.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 720.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 2.663000766067165,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Source Paths",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

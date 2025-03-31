@@ -1,0 +1,67 @@
+{
+  "version": 1.0,
+  "startingPose": null,
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "autonInit"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "trackSpeakerEnable"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "enableLeaveIntakeOut"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "enablePassthrough"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "0-3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "3-2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "2-1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "disableLeaveIntakeOut"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "disablePassthrough"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Center",
+  "choreoAuto": false
+}

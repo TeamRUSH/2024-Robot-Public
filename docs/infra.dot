@@ -1,0 +1,56 @@
+digraph INFRA {
+  node [ color = "black", fillcolor = "#E6E6E6", height =1, style = "filled,bold,rounded", fontname = "Arial" ];
+  "FrontLeftSwerveModule" [ label = "FrontLeftSwerveModule
+(SwerveModule)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "FrontRightSwerveModule" [ label = "FrontRightSwerveModule
+(SwerveModule)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "BackLeftSwerveModule" [ label = "BackLeftSwerveModule
+(SwerveModule)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "BackRightSwerveModule" [ label = "BackRightSwerveModule
+(SwerveModule)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "FrontLeftDriveMotor" [ label = "FrontLeftDriveMotor
+(Motor)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "FrontLeftSteerMotor" [ label = "FrontLeftSteerMotor
+(Motor)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "FrontLeftEncoder" [ label = "FrontLeftEncoder
+(Encoder)", shape =rectangle ];
+  "FrontRightDriveMotor" [ label = "FrontRightDriveMotor
+(Motor)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "FrontRightSteerMotor" [ label = "FrontRightSteerMotor
+(Motor)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "FrontRightEncoder" [ label = "FrontRightEncoder
+(Encoder)", shape =rectangle ];
+  "BackLeftDriveMotor" [ label = "BackLeftDriveMotor
+(Motor)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "BackLeftSteerMotor" [ label = "BackLeftSteerMotor
+(Motor)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "BackLeftEncoder" [ label = "BackLeftEncoder
+(Encoder)", shape =rectangle ];
+  "BackRightDriveMotor" [ label = "BackRightDriveMotor
+(Motor)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "BackRightSteerMotor" [ label = "BackRightSteerMotor
+(Motor)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "BackRightEncoder" [ label = "BackRightEncoder
+(Encoder)", shape =rectangle ];
+  "Pigeon2IMU" [ label = "Pigeon2IMU
+(IMU)", shape =rectangle ];
+  "RushSwerveDrivetrain" [ label = "RushSwerveDrivetrain
+(SwerveDrivetrain)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "FrontLeftSwerveModule" -> "FrontLeftDriveMotor";
+  "FrontLeftSwerveModule" -> "FrontLeftSteerMotor";
+  "FrontLeftSwerveModule" -> "FrontLeftEncoder";
+  "FrontRightSwerveModule" -> "FrontRightDriveMotor";
+  "FrontRightSwerveModule" -> "FrontRightSteerMotor";
+  "FrontRightSwerveModule" -> "FrontRightEncoder";
+  "BackLeftSwerveModule" -> "BackLeftDriveMotor";
+  "BackLeftSwerveModule" -> "BackLeftSteerMotor";
+  "BackLeftSwerveModule" -> "BackLeftEncoder";
+  "BackRightSwerveModule" -> "BackRightDriveMotor";
+  "BackRightSwerveModule" -> "BackRightSteerMotor";
+  "BackRightSwerveModule" -> "BackRightEncoder";
+  "RushSwerveDrivetrain" -> "FrontLeftSwerveModule";
+  "RushSwerveDrivetrain" -> "FrontRightSwerveModule";
+  "RushSwerveDrivetrain" -> "BackLeftSwerveModule";
+  "RushSwerveDrivetrain" -> "BackRightSwerveModule";
+  "RushSwerveDrivetrain" -> "Pigeon2IMU";
+}
